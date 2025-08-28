@@ -9,14 +9,14 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
 import java.io.IOException;
 
-@WebServlet("/booking")
+@WebServlet("/booking,/confirm_booking")
 public class BookingServlet extends HttpServlet {
 
-    private IMovieService movieService = new MovieServiceImpl();
+    private final IMovieService movieService = new MovieServiceImpl();
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String title = req.getParameter("title"); // lấy title từ query param
+        String title = req.getParameter("title");
 
         if(title != null){
             Movie movie = movieService.getMovieByTitle(title);
