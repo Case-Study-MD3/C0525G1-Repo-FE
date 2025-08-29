@@ -44,7 +44,7 @@
 
   <div class="ticket-section">
     <h3>Book Your Tickets</h3>
-    <form action="confirmBooking" method="post">
+    <form action="/confirm" method="post">
       <input type="hidden" name="title" value="${title}">
 
 
