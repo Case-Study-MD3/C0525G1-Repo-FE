@@ -12,6 +12,7 @@ import java.io.IOException;
 @WebServlet("/booking")
 public class BookingServlet extends HttpServlet {
 
+    
     private final IMovieService movieService = new MovieServiceImpl();
 
     @Override

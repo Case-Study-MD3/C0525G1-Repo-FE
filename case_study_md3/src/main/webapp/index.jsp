@@ -12,7 +12,7 @@
 </head>
 <body class="bg-light">
 <div class="container py-4">
-  <h1 class="text-center mb-4" style="font-family: 'VPS Gia Dinh Hoa',ui-serif">MOVIE LIST</h1>
+  <h1 class="text-center mb-4" style="font-family: 'Creepster',cursive">MOVIE LIST</h1>
   <div class="row g-4 justify-content-center">
     <%
       IMovieService movieService = new MovieServiceImpl();
