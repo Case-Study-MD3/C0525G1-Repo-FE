@@ -37,5 +37,6 @@ public class ConfirmServlet extends HttpServlet {
             resp.sendError(HttpServletResponse.SC_NOT_FOUND, "Movie not found!");
         }
     }
+
 }
 
