@@ -119,3 +119,16 @@ UPDATE showtimes SET total_seats = 65 WHERE showtime_id = 9; -- Joker
 
 select * from showtimes;
 select * from tickets;
+
+alter table movies add column images varchar(200);
+update movies set images = "images/avengersEndgamejpg.jpg" where movie_name = 'Avengers: Endgame';
+update movies set images = "images/conjuring.jpg" where movie_name = 'The Conjuring 3';
+update movies set images = "images/gr9KBOV.jpg" where movie_name = 'Fast & Furious 10';
+update movies set images = "images/minions-.jpg" where movie_name = 'Minions: The Rise of Gru';
+update movies set images = "images/oppenheimer.jpg" where movie_name = 'Oppenheimer';
+update movies set images = "images/spiderman.jpeg" where movie_name = 'Spider-Man: No Way Home';
+update movies set images = "images/frozenII.jpg" where movie_name = 'Frozen II';
+update movies set images = "images/inception.jpg" where movie_name = 'Inception';
+update movies set images = "images/joker.jpg" where movie_name = 'Joker';
+
+select * from movies;
