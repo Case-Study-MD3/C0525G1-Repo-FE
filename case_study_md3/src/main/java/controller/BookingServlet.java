@@ -9,7 +9,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
 import java.io.IOException;
 
-@WebServlet("/booking,/confirm_booking")
+@WebServlet("/booking")
 public class BookingServlet extends HttpServlet {
 
     private final IMovieService movieService = new MovieServiceImpl();
